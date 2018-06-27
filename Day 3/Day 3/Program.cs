@@ -50,15 +50,24 @@ namespace Day_3
             Console.ReadLine();
             */
 
+            /*
             Matematika obj = new Matematika();
 
 
-            int saskaitit = obj.Saskaitit12(5,7);
+            int saskaitit = obj.Saskaitit12(5,7);           // abiem nevajag citu objektu, var stradat no viena
             int atnemt = obj.Atnemt(7, 20);
 
             Console.WriteLine(saskaitit);
             Console.WriteLine(atnemt);
 
+            Console.ReadLine();
+            */
+
+            RinkaLinija jauns = new RinkaLinija();
+
+            jauns.Rinkis();
+
+            
             Console.ReadLine();
         }
 
