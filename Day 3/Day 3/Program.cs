@@ -85,7 +85,7 @@ namespace Day_3
             String dist = Console.ReadLine();
             distance = Convert.ToDouble(dist);
 
-            double izmantotaDegviela = distance / paterins;
+            double izmantotaDegviela = distance * (paterins/100);
 
             double izmaksa = izmantotaDegviela * cena;
 
