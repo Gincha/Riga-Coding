@@ -51,10 +51,10 @@ namespace Day_3
             */
 
             Matematika obj = new Matematika();
-            Matematika obj2 = new Matematika();
+
 
             int saskaitit = obj.Saskaitit12(5,7);
-            int atnemt = obj2.Atnemt(7, 20);
+            int atnemt = obj.Atnemt(7, 20);
 
             Console.WriteLine(saskaitit);
             Console.WriteLine(atnemt);
