@@ -24,11 +24,15 @@ namespace Day_3
             Console.ReadLine();
             */
 
+            /*
             Console.WriteLine("Mans skaitlis ir __ ");
             Skaitlis();
 
             Console.ReadLine();
+            */
 
+            Rezultats();
+            Console.ReadLine();
 
         }
         /*
@@ -38,30 +42,57 @@ namespace Day_3
         }
             */
 
-            /*
-        static void RinkaLinija()
+        /*
+    static void RinkaLinija()
+    {
+        double pi = 3.14;
+
+        Console.WriteLine("Ludzu ievadiet rinka linijas radiusu");
+        String radiusString = Console.ReadLine();
+        double radiussDouble = Convert.ToDouble(radiusString);
+
+        double diametrs = 2 * radiussDouble;
+        double garums = 2 * pi * radiussDouble;
+
+        Console.WriteLine("Rinka linijas diametrs ir " + diametrs);
+        Console.WriteLine("Rinka linijas garums ir " + garums);
+       } */
+
+        /*
+    static void Skaitlis()
+    {
+        Console.WriteLine("Ludzu ievadiet skaitli, kuru pievienot beigas ");
+        String skaitlis = Console.ReadLine();
+        double ievade = Convert.ToDouble(skaitlis);
+
+        Console.WriteLine("Mans skaitlis ir " + ievade);
+
+    }   */
+
+        static void Rezultats()
         {
-            double pi = 3.14;
+            double paterins, cena, distance;
 
-            Console.WriteLine("Ludzu ievadiet rinka linijas radiusu");
-            String radiusString = Console.ReadLine();
-            double radiussDouble = Convert.ToDouble(radiusString);
+            Console.WriteLine("Ludzu ievadiet degvielas paterinu (litros) uz 100 kilometriem ");
+            String degviela = Console.ReadLine();
+            paterins = Convert.ToDouble(degviela);
 
-            double diametrs = 2 * radiussDouble;
-            double garums = 2 * pi * radiussDouble;
+            Console.WriteLine("Ludzu ievadiet degvielas cenu (eur) par 1 litru ");
+            String deg = Console.ReadLine();
+            cena = Convert.ToDouble(deg);
 
-            Console.WriteLine("Rinka linijas diametrs ir " + diametrs);
-            Console.WriteLine("Rinka linijas garums ir " + garums);
-           } */
-            
-        static void Skaitlis()
-        {
-            Console.WriteLine("Ludzu ievadiet skaitli, kuru pievienot beigas ");
-            String skaitlis = Console.ReadLine();
-            double ievade = Convert.ToDouble(skaitlis);
+            Console.WriteLine("Ludzu ievadiet distances garumu ");
+            String dist = Console.ReadLine();
+            distance = Convert.ToDouble(dist);
 
-            Console.WriteLine("Mans skaitlis ir " + ievade);
+            double izmantotaDegviela = distance / paterins;
+
+            double izmaksa = izmantotaDegviela * cena;
+
+            Console.WriteLine("Nobraukt " + distance + "km izmaksas " + izmaksa + " eur.");
 
         }
+
+
     }
 }
