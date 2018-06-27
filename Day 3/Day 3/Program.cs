@@ -31,10 +31,38 @@ namespace Day_3
             Console.ReadLine();
             */
 
+            /*
             Rezultats();
             Console.ReadLine();
+            */
 
+            /*
+            JaunaKlase objekts1 = new JaunaKlase();         // uztaisa jaunu objektu un izsauc t.s. konstruktoru
+            JaunaKlase objekts2 = new JaunaKlase();
+
+            int vertiba = objekts1.Saskaitit(8, 5);
+            objekts1.globals = 5 + 5;                   /* ja izmaina globals vertibu objektam 1, tad 
+                                                                objektam 2 vertiba nemainas
+                                                                */
+            /*
+            Console.WriteLine(objekts1.globals);
+            Console.WriteLine(objekts2.globals);
+            Console.ReadLine();
+            */
+
+            Matematika obj = new Matematika();
+            Matematika obj2 = new Matematika();
+
+            int saskaitit = obj.Saskaitit12(5,7);
+            int atnemt = obj2.Atnemt(7, 20);
+
+            Console.WriteLine(saskaitit);
+            Console.WriteLine(atnemt);
+
+            Console.ReadLine();
         }
+
+
         /*
         static void IzvaditSveicienu(string a, string b)        // uztaisa 2 parametrus funkcijai
         {
@@ -69,6 +97,7 @@ namespace Day_3
 
     }   */
 
+            /*
         static void Rezultats()
         {
             double paterins, cena, distance;
@@ -92,7 +121,7 @@ namespace Day_3
             Console.WriteLine("Nobraukt " + distance + "km izmaksas " + izmaksa + " eur.");
 
         }
-
+            */
 
     }
 }
