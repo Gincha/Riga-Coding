@@ -65,7 +65,7 @@ namespace Day_3
 
             RinkaLinija jauns = new RinkaLinija();
 
-            jauns.Rinkis();
+            jauns.Rinkis();                         //objekts.funkcija kuru grib izsaukt
 
             
             Console.ReadLine();
