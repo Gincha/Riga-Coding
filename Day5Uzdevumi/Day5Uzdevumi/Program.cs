@@ -47,6 +47,7 @@ namespace Day5Uzdevumi
             Console.ReadLine();
             */
 
+            /*
             pd1_1 uzdevumi = new pd1_1();
             pd1_2 uzdevumi2 = new pd1_2();
 
@@ -86,7 +87,10 @@ namespace Day5Uzdevumi
                     Console.WriteLine("Ludzu ievadiet pareizu uzdevuma nummuru");
                     break;
             }
-
+            */
+            ExtraKlase uzdevumi = new ExtraKlase();
+            uzdevumi.Uzdevums151();
+            Console.ReadLine();
         }
 
 
