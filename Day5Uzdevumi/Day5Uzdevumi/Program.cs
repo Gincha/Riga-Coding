@@ -89,7 +89,7 @@ namespace Day5Uzdevumi
             }
             */
             ExtraKlase uzdevumi = new ExtraKlase();
-            uzdevumi.Uzdevums151();
+            uzdevumi.Uzdevums81();
             Console.ReadLine();
         }
 

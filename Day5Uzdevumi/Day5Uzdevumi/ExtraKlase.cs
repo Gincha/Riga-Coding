@@ -70,7 +70,7 @@ namespace Day5Uzdevumi
             string skaitlis3 = Console.ReadLine();
             double cipars3 = Convert.ToDouble(skaitlis3);
 
-            if (cipars1 > 0&& cipars2 > 0 && cipars3 > 0)
+            if (cipars1+cipars2 > cipars3 && cipars2+cipars3 > cipars1 && cipars1+cipars3 > cipars2)
             {
                 
                       Console.WriteLine("Trijsturis ir derigs");
@@ -112,5 +112,50 @@ namespace Day5Uzdevumi
                 
             
         }
-}
+
+        public void Uzdevums81()
+        {
+            Console.WriteLine("Ludzu izvelieties skaitli. Uzmanibu skaitli nevar but nulle!");
+            string skaitlis = Console.ReadLine();
+            double cipars1 = Convert.ToDouble(skaitlis);
+
+            Console.WriteLine("Ludzu izvelieties skaitli. Uzmanibu skaitli nevar but nulle!");
+            string skaitlis2 = Console.ReadLine();
+            double cipars2 = Convert.ToDouble(skaitlis2);
+
+            if (cipars1==0 || cipars2 == 0)
+            {
+                Console.WriteLine("Tev jau rakstija, ka skaitli nevar but nulle!!!");
+            }
+            else
+            {
+                Console.WriteLine(Uzdevums81(cipars1, cipars2));
+            }
+
+        }
+
+        private double Uzdevums81(double a, double b)
+        {
+            double rezultats = 0;
+
+            if (a > b ||a!=0 || b!=0)
+            {
+                rezultats = a;
+            }
+            else
+            {
+                if (a < b || a != 0 || b != 0)
+                {
+                    rezultats = b;
+                }
+                else
+                {
+                    rezultats = a;
+                }
+            }
+            return rezultats;
+        }
+
+
+    }
 }
