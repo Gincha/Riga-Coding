@@ -36,6 +36,9 @@ namespace Day7
 
             for (int i=1; i<=6; i++)
             {
+                // int reizes = 5-1;
+                //Console.WriteLine("Palikusi "+reizes + meginajumi");
+
                 Console.WriteLine("Uzminiet skaitli");
                 string input = Console.ReadLine();
                 int atbilde = Convert.ToInt32(input);
@@ -59,6 +62,49 @@ namespace Day7
                 
             }
 
+        }
+
+        public void Tresais()
+        {
+            // 1. uzdevums bet ar while ciklu
+
+            int reizin = 0;
+            int atmina = 0;
+            int a = 1;
+            while (a <= 9)
+            {
+                reizin = a * 2;
+                atmina = atmina + reizin;
+
+                a++;
+            }
+            Console.WriteLine("Summa ir " + atmina);
+        }
+        public void Ceturtais()
+        {
+            int reizes = 0;
+            string input = "";
+
+            do
+            {
+                reizes++;
+                Console.WriteLine("Uzminiet skaitli! Meginajums " + reizes+ "/5!" );
+                input = Console.ReadLine();
+                
+                if (input == "11")
+                {
+                    Console.WriteLine("Pareizi");
+                    break;
+                }
+                else
+                {
+                    if (reizes ==5)
+                    {
+                        Console.WriteLine("Neizdevas, vairak iespeju nebus");
+                        break;
+                    }
+                }
+            } while (input != "11");
         }
     }
 }
