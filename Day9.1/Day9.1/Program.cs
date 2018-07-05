@@ -11,7 +11,6 @@ namespace Day9._1
             Speles spelet = new Speles();
             izsauc.Izvade();
 
-        
         }
     }
 }
