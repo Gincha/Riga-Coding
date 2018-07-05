@@ -85,6 +85,8 @@ namespace Day9._1
                         Kapinasana(a5, b5);
                         Console.WriteLine(result);
                         break;
+                    case "0":
+                        break;
                     default: Console.WriteLine("Nepareiza ievade");
                         break;
                 }
@@ -119,13 +121,11 @@ namespace Day9._1
 
         private double Kapinasana (double ievade1, double ievade2)
         {
-
-            int pakape = 0;
-            for (double a = ievade1; pakape<=ievade2; pakape++)
+            result = 1;
+            for (double c = 0; c<ievade2; c++)
             {
-                result = a * a;
+                result *= ievade1;
             }
-
             return result;
         }
     }

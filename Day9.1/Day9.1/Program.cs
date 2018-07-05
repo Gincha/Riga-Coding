@@ -9,9 +9,8 @@ namespace Day9._1
 
             Kalkulators izsauc = new Kalkulators();
             Speles spelet = new Speles();
-            spelet.Izvade();
+            izsauc.Izvade();
 
-            Console.ReadLine();
         }
     }
 }
