@@ -126,6 +126,7 @@ namespace Day9._1
             {
                 result *= ievade1;
             }
+
             return result;
         }
     }
