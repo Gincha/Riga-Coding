@@ -8,7 +8,7 @@ public class Day121 {
 		String test = "abcdef";
 		test = test.concat("ghijk");	//piekabina klat originalajam stringam
 		
-		String test2 = test.concat("ghijk").toUpperCase().concat("!!!");		//piekabina tekstu, parveido uz lielajiem burtiem  un piekabina !!!
+		String test2 = test.concat("ghijk").toUpperCase().concat("!!!");//piekabina tekstu, parveido uz lielajiem burtiem  un piekabina !!!
 		System.out.println("test string:" +test);		//izvada tekstu
 		System.out.println("test2 string: " +test2);
 		
