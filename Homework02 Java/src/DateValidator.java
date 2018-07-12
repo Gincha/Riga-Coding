@@ -16,7 +16,11 @@ public class DateValidator {
 		int gads = scanner.nextInt();
 
 		scanner.close();
-
+		
+		if(datums<1 || datums >31 || menesisIn<1 || menesisIn >12) {
+			System.out.println("Ievade nav pareiza!!");
+		}
+		
 		String[] menesuKede;
 		menesuKede = new String[12];
 
