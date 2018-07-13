@@ -15,6 +15,10 @@ public class DateValidator {
 		System.out.println("Ievadiet gadu");
 		int gads = scanner.nextInt();
 
+			// ja gads dalas ar 4 tad tas ir garais gads.
+		//int year = 1945;
+		// System.out.println("Is " + year + "leap year ?" +(year%4==0+));
+		
 		scanner.close();
 		
 		if(datums<1 || datums >31 || menesisIn<1 || menesisIn >12) {
