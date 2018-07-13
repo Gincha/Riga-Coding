@@ -4,7 +4,7 @@ public class Majasdarbs {
 	public static void main(String[] args) {
 		System.out.println("Ievadi vardu un uzvardu ar atstarpi");
 		Scanner scanner = new Scanner(System.in);
-		String vardsUzvards = scanner.nextLine().replaceAll("[\\.$|,|;|'=_+)(*&^%#@!~`<>{}-]", "  ").replace("  ", " ").trim();
+		String vardsUzvards = scanner.nextLine().replace("  ", "").trim();
 
 		scanner.close();
 		
