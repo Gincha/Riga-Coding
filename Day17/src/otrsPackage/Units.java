@@ -1,3 +1,4 @@
+package otrsPackage;
 
 public enum Units {
 	
@@ -5,6 +6,6 @@ public enum Units {
 		
 		Centimeters,
 		
-		Meter
+		Meters
 	
 }

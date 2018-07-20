@@ -1,9 +1,16 @@
+package paka;
+
+import otrsPackage.Units;
 
 public class UnitUtils {
 
 	private static final double millToCentimeter = 10;
 	private static final double centimeterToMeter = 100;
 	private static final double millToMeter = millToCentimeter * centimeterToMeter;
+	
+	private static final double millToCentimeterArea = 100;
+	private static final double centimeterToMeterArea = 10000;
+	private static final double millToMeterArea = millToCentimeterArea * centimeterToMeterArea;
 	
 	private UnitUtils() {
 		
@@ -19,7 +26,7 @@ public class UnitUtils {
 			if (uzKuru == Units.Centimeters) {
 				result = a/millToCentimeter;
 				return result;
-			}else if(uzKuru == Units.Meter) {
+			}else if(uzKuru == Units.Meters) {
 				result = a/millToMeter;
 				return result;
 			}
@@ -27,11 +34,11 @@ public class UnitUtils {
 			if (uzKuru == Units.Millimeters) {
 				result = a*millToCentimeter;
 				return result;
-			}else if(uzKuru == Units.Meter) {
+			}else if(uzKuru == Units.Meters) {
 				result = a/centimeterToMeter;
 				return result;
 			}
-		case Meter:
+		case Meters:
 			if(uzKuru==Units.Centimeters){
 				result = a/centimeterToMeter;
 				return result;
@@ -51,26 +58,26 @@ public class UnitUtils {
 		switch (noKura) {
 		case Millimeters: 
 			if (uzKuru == Units.Centimeters) {
-				result = a/millToCentimeter;
+				result = a/millToCentimeterArea;
 				return result;
-			}else if(uzKuru == Units.Meter) {
-				result = a/millToMeter;
+			}else if(uzKuru == Units.Meters) {
+				result = a/millToMeterArea;
 				return result;
 			}
 		case Centimeters:
 			if (uzKuru == Units.Millimeters) {
-				result = a*millToCentimeter;
+				result = a*millToCentimeterArea;
 				return result;
-			}else if(uzKuru == Units.Meter) {
-				result = a/centimeterToMeter;
+			}else if(uzKuru == Units.Meters) {
+				result = a/centimeterToMeterArea;
 				return result;
 			}
-		case Meter:
+		case Meters:
 			if(uzKuru==Units.Centimeters){
-				result = a/centimeterToMeter;
+				result = a/centimeterToMeterArea;
 				return result;
 			}else if(uzKuru == Units.Millimeters) {
-				result = a/millToMeter;
+				result = a/millToMeterArea;
 				return result;
 			}
 			default:
