@@ -1,9 +1,9 @@
 package pamats;
 
+import java.util.ArrayList;
+
 public interface Player {
 
-	public default int makeMove() {
-		
-		return 0;
-	}
+	public ArrayList<Integer> makeMove(int a, int b); 
+	
 }
