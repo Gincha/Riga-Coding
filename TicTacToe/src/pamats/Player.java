@@ -4,6 +4,15 @@ import java.util.ArrayList;
 
 public interface Player {
 
-	public ArrayList<Integer> makeMove(int a, int b); 
+	public ArrayList<Integer> makeMove();
+
 	
+//	{ 
+//	ArrayList<Integer> coordinates = new ArrayList<>();
+//	
+//	coordinates.add(a, b);
+//	
+//	return coordinates;
+//	
+//	}
 }
