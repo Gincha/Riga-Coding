@@ -1,4 +1,4 @@
-package pamats;
+package spelesFaili;
 
 public enum GameStatus {
 

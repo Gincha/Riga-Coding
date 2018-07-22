@@ -1,45 +1,43 @@
 package pamats;
 
-public class Main {
+import spelesFaili.Game;
+
+public class Main { 
 
 	public static void main(String[] args) {
-		
-		Character[][] galdsArr = new Character[3][3];
-		Board galds = new Board(galdsArr);
-		
-		galds.printBoard();
-		galds.setBoardArr('X', 0,0);
 
-		
-		System.out.println("------------------");
-		galds.printBoard();
-		
-		galds.setBoardArr('O', 2,2);
+		Game spele = new Game();
 
-		galds.setBoardArr('X', 1, 0);
-		
-		System.out.println("Pozicija 1.1: " +galds.testPosition(1, 1) + " un pozicija 0.1: " +galds.testPosition(0, 1));
-		
-		System.out.println("------------------");
-		galds.printBoard();
-		
-		System.out.println("----------");
-		
+		String input;
+		String ievade;
 
-		galds.setBoardArr('X', 2, 0);
-		galds.printBoard();
-		
-		HumanPlayer player = new HumanPlayer();
+		do {
 
-	System.out.println(player.makeMove());
-		
+			System.out.println("Spelesim pret datoru vai pret citu speletaju?");
+			System.out.println("D - pret datoru");
+			System.out.println("M - pret citu speletaju");
+			System.out.println("X - Iziet");
+			
+			input = spele.scanner();
+			ievade = input.toUpperCase();
 
-	galds.testEven();
-	
-	galds.newGame();
+			switch (ievade) {
+			case "D":
+				spele.launchGameSinglePlayer();
+				break;
+				
+			case "M":
+				spele.launchGameMultiPlayer();
+				break;
+				
+			case "X":
+				System.out.println("Beidzam!");
+				break;
+				
+			default:
+				System.out.println("Nepareiza ievade!");
+			}
 
-	ComputerPlayer compPlayer = new ComputerPlayer();
-	System.out.println(compPlayer.makeMove());
+		} while (!ievade.equals("X"));
 	}
-
 }
