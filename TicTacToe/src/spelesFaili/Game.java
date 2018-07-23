@@ -61,12 +61,14 @@ public class Game extends Board {
 
 	public void launchGameMultiPlayer() {
 
+		skaititajs=0;
 		newGame(); // notira galdu
 		printBoard(); // parada galdu
 		gamePlayerVsPlayer(); // palaiz speli
 		result(); // ieraksta un parada rezultatu
 		String iev;
 		String ievade;
+		
 		do {
 
 			System.out.println("Vai spelet velreiz? Y (Ja) /N (Ne)");
@@ -91,6 +93,7 @@ public class Game extends Board {
 		} while (!ievade.equals("N"));
 		rezultats1 = 0;
 		rezultats2 = 0;
+		skaititajs = 0;
 	}
 
 	
