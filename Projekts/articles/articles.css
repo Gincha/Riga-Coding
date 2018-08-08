@@ -1,0 +1,46 @@
+.logo{
+  width: 185px;
+  height: 80px;
+}
+
+.page-number{
+    float: right;
+    width: 200px;
+    padding-right: 30px;
+    /* margin: 0px 0px 50px 0px; */
+  }
+
+  .page-nav {
+    padding-left: 50px;
+    padding-bottom: 252px; 
+    margin: 0px 0px 25px 0px;
+  }
+  
+  #footer{
+    /* float: left;;
+    padding-left: 15px; 
+    padding-right: 15px;
+    margin: 0px 101.5px 15px 101.5px; */
+
+
+  }
+
+ .all-buttons{
+   margin-top: 15px;
+
+ }
+
+ /* article1 */
+ .row li {
+  width: 33.3%;
+  float: left;
+}
+
+img {
+  border: 0 none;
+  display: inline-block;
+  height: auto;
+  max-width: 100%;
+  vertical-align: middle;
+}
+

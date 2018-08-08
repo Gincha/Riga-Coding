@@ -1,0 +1,61 @@
+.logo{
+    width: 185px;
+    height: 80px;
+  }
+  
+  .page-number{
+      float: right;
+      width: 200px;
+      padding-right: 30px;
+      /* margin: 0px 0px 50px 0px; */
+    }
+  
+    .page-nav {
+      padding-left: 50px;
+      padding-bottom: 252px; 
+      margin: 0px 0px 25px 0px;
+    }
+    
+
+  
+   .all-buttons{
+     margin-top: 15px;
+  
+   }
+  
+   /* article1 */
+   .row li {
+    width: 33.3%;
+    float: left;
+  }
+  
+  img {
+    border: 0 none;
+    display: inline-block;
+    height: auto;
+    max-width: 100%;
+    vertical-align: middle;
+  }
+
+#chat-box {
+    width:400px;
+    height:400px;
+    overflow:scroll;
+  }
+
+  #textMsg {
+    overflow: auto;
+  }
+
+  #msg-title {
+    font-size: 8px;
+  }
+  #msg-text {
+    font-size: 12px;
+  }
+  
+  #msg-time {
+    font-style: italic;
+    font-size: 6px;
+  }
+  
