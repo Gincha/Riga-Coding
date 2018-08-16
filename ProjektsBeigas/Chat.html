@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+
+    <link href="Css/main.css" rel="stylesheet" type="text/css">
+
+    <!--Start of Zendesk Chat Script-->
+    <!-- <script type="text/javascript">
+    window.$zopim||(function(d,s){var z=$zopim=function(c){z._.push(c)},$=z.s=
+    d.createElement(s),e=d.getElementsByTagName(s)[0];z.set=function(o){z.set.
+    _.push(o)};z._=[];z.set._=[];$.async=!0;$.setAttribute("charset","utf-8");
+    $.src="https://v2.zopim.com/?5twUcBwYt3Y1HqmXDvagbe30uqWbzWaI";z.t=+new Date;$.
+    type="text/javascript";e.parentNode.insertBefore($,e)})(document,"script");
+    </script> -->
+    <!--End of Zendesk Chat Script-->
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="row">
+
+                <div class="col-5">
+                    <a href="index.html">
+                        <img src="Img/logo.png" class="logo" onclick="relocate_home()">
+                    </a>
+                </div>
+
+                <div class="col-7 all-buttons">
+                    <ul class="list-inline">
+                        <li>
+                            <button type="button" class="btn btn-light ">
+                                <a href="index.html" style="color:inherit">Home</a>
+                            </button>
+                        </li>
+                        <li>
+                            <button type="button" class="btn btn-light ">
+                                <a href="articles/articles.html" style="color:inherit">Articles</a>
+                            </button>
+                        </li>
+                        <li>
+                            <button type="button" class="btn btn-light ">
+                                <a href="Chat.html" style="color:inherit">Chat</a>
+                            </button>
+                        </li>
+                        <li>
+                            <button type="button" class="btn btn-light ">
+                                <a href="register.html" style="color:inherit">Register</a>
+                            </button>
+                        </li>
+                        <li>
+                            <button type="button" class="btn btn-light ">
+                                <a href="contactUs.html" style="color:inherit">Contact us</a>
+                            </button>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+        </div>
+    </header>
+    <hr>
+
+    <div class="container">
+        <a href="../ProjektsBeigas/index.html">Home</a>
+        <span>-></span>
+        <span>Chat</span>
+    </div>
+    <br>
+
+    <div class="container">
+        <h3 class="title">Chat</h3>
+    </div>
+
+    <div class="container">
+        <div class="col-12" id="chatDiv">
+
+            <div class="col-12" id="chat-box">
+
+            </div>
+
+            <div class="container">
+                <div class="container row">
+                    <label>
+                        <b>Your name</b>
+                    </label>
+                </div>
+                <div class="container row">
+                    <input id="username" placeholder="Your name: " required></input>
+                </div>
+                <div class="container row">
+                    <label id="enterMsg">
+                        <b>Enter message</b>
+                    </label>
+                </div>
+
+                <div class="row">
+                    <div class="col-11">
+                        <textarea class="form-control" type="text" id="usermsg" rows="2" placeholder="Your message:"></textarea>
+                    </div>
+                    <div class="col-1">
+                        <button onclick="sendMessage()" id="submit-msg-button" type="button" class="btn btn-primary">Send</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <hr>
+
+    <div class="container">
+        <footer id="footer">
+            contactus@contactusus.com
+        </footer>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript" src="Js/chat.js"></script>
+
+</body>
+
+</html>
